@@ -1,0 +1,130 @@
+body {
+	background: #02010a;
+	font-family: "Dancing Script";
+	margin-left: 10%;
+	width: 80%;
+}
+
+header {
+	background: #5b7989;
+	color: white;
+	height: 80px;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+header a {
+color: white;
+}
+
+header h1 {
+float: left;
+text-shadow: 2px 2px 2px #02010a;
+word-spacing: 10px;
+margin-left: 30px;
+}
+
+nav {
+float: right;
+}
+
+nav ul {
+list-style: none;
+padding-right: 20px;
+margin-bottom: 0px;
+}
+
+nav ul li {
+display: inline-block;
+line-height: 60px;
+}
+
+nav ul li a {
+display: block;
+padding: 0 10px;
+text-decoration: none;
+font-size: 22px;
+}
+
+#contenido {
+display: flex;
+position:relative;
+flex-direction: column;
+width: 100%;
+}
+
+#galeria1 {
+background-color: #d5c75f;
+}
+
+.contenedor {
+display: flex;
+flex-direction: row;
+}
+
+#galeria1 .contenedor {
+text-align: center;
+margin: 10px;
+width: 98%;
+}
+
+#galeria1 .contenedor > div {
+padding: 10px;
+width: 33.3%;
+}
+
+
+#galeria2 {
+background-color: #d5c75f;
+}
+
+#galeria2 .contenedor {
+text-align: center;
+margin: 10px;
+width: 98%;
+}
+
+#galeria2 .contenedor > div {
+padding: 10px;
+width: 33.3%;
+}
+
+img {
+width: 250px;
+height: 180px;
+text-shadow: 2px 2px 2px #82c3a6;
+border: solid 2px #82c3a6;
+}
+
+#imagen1 {
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+
+#imagen2, #imagen4, #imagen6 {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#imagen3 {
+	filter: sepia(90%);
+	-webkit-filter: sepia(90%);
+}
+
+
+footer {
+	background: #C6d5c5;
+	height: 140px;
+	border-radius: 0 0 10px 10px;
+}
+
+footer .contenedor > div {
+text-align: left;
+width: 25%;
+margin-left: 30px;
+font-weight: bold;
+}
+
+h2 {
+	margin-bottom:0;
+}
