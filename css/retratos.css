@@ -13,6 +13,21 @@ header {
 	border-radius: 10px 10px 0 0;
 }
 
+header {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 150%;
+    }
+
+    to {
+        margin-top: -5%;
+    }
+}
+
 header a {
 color: white;
 }
@@ -73,7 +88,6 @@ padding: 10px;
 width: 33.3%;
 }
 
-
 #galeria2 {
 background-color: #d5c75f;
 }
@@ -126,4 +140,22 @@ font-weight: bold;
 
 h2 {
 	margin-bottom:0;
+}
+
+@media all and (max-width: 900px) {
+	header {
+		width: 100%;
+		text-align: center;
+		height: 180px;
+}
+nav {
+	text-align: center;
+}
+body {
+	width: 900px;
+	margin-left: 2%;
+}
+#contenido {
+	width: 900px;
+}
 }

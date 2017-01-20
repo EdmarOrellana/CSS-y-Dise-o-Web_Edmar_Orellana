@@ -11,7 +11,18 @@ header {
 	height: 80px;
 	width: 100%;
 	border-radius: 10px 10px 0 0;
+	animation-duration: 1s;
+	animation-name: slidein;
+}
 
+@keyframes slidein {
+    from {
+        margin-top: 150%;
+    }
+
+    to {
+        margin-top: -5%;
+    }
 }
 
 header a {
@@ -60,15 +71,12 @@ background-color: #82c3a6;
 
 #contenido-secundario {
 background-color: #d5c75f;
-border: 1px;
 }
 
 .contenedor {
 display: flex;
 flex-direction: row;
 }
-
-
 
 #contenido-central .contenedor {
 margin: 20px;
@@ -78,7 +86,7 @@ width: 80%;
 #contenido-central .contenedor > img {
 width: 950px;
 height: 450px;
-margin-left: 50px;
+margin-left: 42px;
 }
 
 #contenido-secundario .contenedor > div {
@@ -150,4 +158,22 @@ font-weight: bold;
 
 h2 {
 	margin-bottom:0;
+}
+
+@media all and (max-width: 900px) {
+	header {
+		width: 100%;
+		text-align: center;
+		height: 180px;
+}
+nav {
+	text-align: center;
+}
+body {
+	width: 900px;
+	margin-left: 2%;
+}
+#contenido {
+	width: 900px;
+}
 }
