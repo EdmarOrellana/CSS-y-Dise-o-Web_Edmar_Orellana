@@ -1,21 +1,25 @@
-body {
+*
+{
+	margin:0;
+}
+
+body{
 	background: #02010a;
 	font-family: "Dancing Script";
-	margin-left: 10%;
-	width: 80%;
 }
 
-header {
-	background: #5b7989;
-	color: white;
-	height: 80px;
-	width: 100%;
+header
+{
+	width: 900px;
+	margin: 0 auto;
+	height: 3em;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	border-radius: 10px 10px 0 0;
-}
-
-header {
-    animation-duration: 1s;
-    animation-name: slidein;
+	background: #5b7989;
+	color:white;
+	animation-duration: 1s;
+	animation-name: slidein;
 }
 
 @keyframes slidein {
@@ -28,15 +32,15 @@ header {
     }
 }
 
-header a {
-color: white;
-}
-
 header h1 {
 float: left;
 text-shadow: 2px 2px 2px #02010a;
 word-spacing: 10px;
 margin-left: 30px;
+}
+
+header a {
+color: white;
 }
 
 nav {
@@ -51,56 +55,44 @@ margin-bottom: 0px;
 
 nav ul li {
 display: inline-block;
-line-height: 60px;
+line-height: 40px;
 }
 
 nav ul li a {
-display: block;
 padding: 0 10px;
-text-decoration: none;
 font-size: 22px;
 }
 
-#contenido {
-display: flex;
-position:relative;
-flex-direction: column;
-width: 100%;
+a:visited {
+text-decoration: none;
 }
 
-#galeria1 {
-background-color: #d5c75f;
+a:hover {
+	text-decoration: none;
 }
 
-.contenedor {
-display: flex;
-flex-direction: row;
+#contenido1
+{
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
-#galeria1 .contenedor {
-text-align: center;
-margin: 10px;
-width: 98%;
+#contenido2
+{
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
-#galeria1 .contenedor > div {
-padding: 10px;
-width: 33.3%;
-}
-
-#galeria2 {
-background-color: #d5c75f;
-}
-
-#galeria2 .contenedor {
-text-align: center;
-margin: 10px;
-width: 98%;
-}
-
-#galeria2 .contenedor > div {
-padding: 10px;
-width: 33.3%;
+article
+{
+	box-sizing: border-box;
+	float:left;
+	padding: 2%;
+	text-align: center;
 }
 
 img {
@@ -110,52 +102,159 @@ text-shadow: 2px 2px 2px #82c3a6;
 border: solid 2px #82c3a6;
 }
 
-#imagen1 {
-	-webkit-filter:blur(10px);
-	filter: blur(10px);
+#galeria1	{
+background-color: #d5c75f;
+width: 33.3%;
+
 }
 
-#imagen2, #imagen4, #imagen6 {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-}
+#galeria2	{
+	background-color: #d5c75f;
+	width: 33.4%;
+	}
 
-#imagen3 {
-	filter: sepia(90%);
-	-webkit-filter: sepia(90%);
-}
+#galeria3	{
+	background-color: #d5c75f;
+	width: 33.3%;
+	}
 
-footer {
-	background: #C6d5c5;
-	height: 140px;
-	border-radius: 0 0 10px 10px;
-}
+	#galeria4	{
+	background-color: #d5c75f;
+	width: 33.3%;
+	}
 
-footer .contenedor > div {
-text-align: left;
-width: 25%;
-margin-left: 30px;
-font-weight: bold;
-}
+	#galeria5	{
+	background-color: #d5c75f;
+	width: 33.4%;
+	}
 
-h2 {
-	margin-bottom:0;
-}
+	#galeria6	{
+	background-color: #d5c75f;
+	width: 33.3%;
+	}
 
-@media all and (max-width: 900px) {
-	header {
-		width: 100%;
+	#imagen1 {
+		-webkit-filter:blur(10px);
+		filter: blur(10px);
+	}
+
+	#imagen2, #imagen4, #imagen6 {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	#imagen3 {
+		filter: sepia(90%);
+		-webkit-filter: sepia(90%);
+	}
+
+
+
+
+	@media only screen and (max-width: 900px){
+		header
+		{
+		width:95%;
+		height: 120px;
+		}
+
+		header h1
+		{
+		text-shadow: 2px 2px 2px #02010a;
+		word-spacing: 10px;
 		text-align: center;
-		height: 180px;
-}
-nav {
-	text-align: center;
-}
-body {
-	width: 900px;
-	margin-left: 2%;
-}
-#contenido {
-	width: 900px;
-}
-}
+		}
+
+	  #contenido1, #contenido2
+		{
+			width: 95%;
+			margin: 0 auto;
+		}
+
+		#galeria1
+		{
+			width: 100%;
+		}
+
+		#galeria2
+		{
+			width: 100%;
+		}
+
+		#galeria3
+		{
+			width: 100%;
+		}
+
+		#galeria4
+		{
+			width: 100%;
+		}
+
+		#galeria5
+		{
+			width: 100%;
+		}
+
+		#galeria6
+		{
+			width: 100%;
+		}
+
+		#pie-pagina
+			{
+			width: 95%;
+			height: 355px;
+			}
+
+			#pie-pagina .contenedor {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.contenedor #contacto {
+			width: 100%;
+			margin-left: 40px;
+			height: 110px;
+			}
+
+			.contenedor #terminos {
+			width: 100%;
+			margin-left: 40px;
+			height: 70px;
+			}
+
+			.contenedor #redes {
+			width: 100%;
+			margin-left: 40px;
+			height: 90px;
+			}
+
+			.contenedor #derechos {
+			width: 100%;
+			margin-left: 40px;
+			height: 90px;
+			}
+	}
+
+	footer {
+		background: #C6d5c5;
+		height: 7em;
+		border-radius: 0 0 10px 10px;
+		width: 900px;
+		margin: 0 auto;
+		padding-top: 1%;
+		padding-bottom: 2%;
+	}
+
+	.contenedor {
+		display: flex;
+		flex-direction: row;
+	}
+
+	footer .contenedor > article {
+	text-align: left;
+	width: 25%;
+	margin-left: 30px;
+	font-weight: bold;
+	}
